@@ -1,0 +1,1 @@
+This is a university streamlit application project.
