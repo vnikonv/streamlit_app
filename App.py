@@ -13,16 +13,13 @@ styles = {
         "background-color": "rgb(123, 209, 146)",
         "display": "flex",
         "justify-content": "center",
-        "font-size": "20px",
-        "color": "white",
+        "align-items": "center",
+        "height": "30px",
     },
 
     "img": {
-        "position": "absolute",
-        "left": "-20px",
-        "top": "4px",
-        "width": "100px",
-        "height": "40px",
+        "bottom": "0.5px",
+        "height": "30px",
     },
 
     "div": {
@@ -30,18 +27,20 @@ styles = {
     },
 
     "span": {
-        "border-radius": "0.5rem",
-        "color": "rgb(49, 51, 63)",
-        "margin": "0 0.125rem",
-        "padding": "0.4375rem 0.625rem",
+        "display": "block",
+        "border-radius": "0.15rem",
+        "padding": "0.2rem 0.725rem",
+        "color": "white",
+        "font-size": "18px",
     },
 
     "active": {
-        "background-color": "rgba(105, 114, 255, 0.25)",
+        "background-color": "black",
+        "font-weight": "normal",
     },
 
     "hover": {
-        "background-color": "rgba(255, 255, 255, 0.35)",
+        "background-color": "rgba(0, 0, 0, 0.35)",
     }
 }
 
