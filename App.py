@@ -4,7 +4,7 @@ from streamlit_navigation_bar import st_navbar as navbar
 from PIL import Image
 
 image = Image.open("img/magic.png")
-st.set_page_config(initial_sidebar_state="collapsed", page_icon=image)
+st.set_page_config(page_title="The Work", initial_sidebar_state="collapsed", page_icon=image)
 
 pages = ["Home", "Project1", "Project2", "Project3"]
 
