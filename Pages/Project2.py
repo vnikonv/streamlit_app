@@ -47,16 +47,14 @@ class Project2:
         elif source_option == "Local drive":
             file = st.file_uploader("Upload a video or a photo", type = ["mp4", "avi", "mov", "png", "jpg"])
             st.write(file)
-            if file.type in ["mp4", "avi", "mov"] and file:
-
-                temp_file = tempfile.NamedTemporaryFile(delete=False, suffix=Path(file.name).suffix)
-                temp_file.write(file.read())
-                video_url = temp_file.name
-                st.video(video_url)
-
-            elif file.type in ["png", "jpg"] and file:
-                img_file = file
-                if img_file is not None:
+            if file:
+                if file.type in ["mp4", "avi", "mov"]:
+                    temp_file = tempfile.NamedTemporaryFile(delete=False, suffix=Path(file.name).suffix)
+                    temp_file.write(file.read())
+                    video_url = temp_file.name
+                    st.video(video_url)
+                elif file.type in ["png", "jpg"] and file:
+                    img_file = file
                     file_bytes = np.asarray(bytearray(img_file.read()), dtype=np.uint8)
                     frame = cv2.imdecode(file_bytes, 1)
                     st.image(frame, channels="BGR")
