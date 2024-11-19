@@ -23,6 +23,10 @@ class Project2:
 
         if source_option == "Mobile camera":
             img_file = st.camera_input("Take a photo")
+            if img_file is not None:
+                file_bytes = np.asarray(bytearray(img_file.read()), dtype=np.uint8)
+                frame = cv2.imdecode(file_bytes, 1)
+                st.image(frame, channels="BGR")
 
         elif source_option == "Youtube link":
             youtube_url = st.text_input("Insert a link")
@@ -51,7 +55,8 @@ class Project2:
 
         elif source_option == "Web camera":
             st.write("A webcam is being launched. . .")
-            webrtc_streamer(key="webcam", mode=WebRtcMode.SENDRECV)
+            webrtc_streamer(key="webcam")
+            # mode=WebRtcMode.SENDRECV
 
         elif source_option == "RTSP":
             rtsp_url = st.text_input("Insert a rtsp link")
@@ -61,12 +66,8 @@ class Project2:
         run_button = st.button("Run")
         frame_place = st.empty()
 
-        if source_option == "Mobile camera" and img_file is not None:
-            file_bytes = np.asarray(bytearray(img_file.read()), dtype=np.uint8)
-            frame = cv2.imdecode(file_bytes, 1)
-            st.image(frame, channels="BGR")
 
-        elif run_button and video_url is not None and source_option in ["Local drive", "RTSP", "Web camera"]:
+        if run_button and video_url is not None and source_option in ["Local drive", "RTSP"]:
             self.cap = cv2.VideoCapture(video_url)
 
 
