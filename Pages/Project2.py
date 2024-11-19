@@ -46,7 +46,6 @@ class Project2:
 
         elif source_option == "Local drive":
             file = st.file_uploader("Upload a video or a photo", type = ["mp4", "avi", "mov", "png", "jpg"])
-            st.write(file)
             if file:
                 if file.type in ["mp4", "avi", "mov"]:
                     temp_file = tempfile.NamedTemporaryFile(delete=False, suffix=Path(file.name).suffix)
