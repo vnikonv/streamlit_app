@@ -55,8 +55,7 @@ class Project2:
 
         elif source_option == "Web camera":
             st.write("A webcam is being launched. . .")
-            webrtc_streamer(key="webcam")
-            # mode=WebRtcMode.SENDRECV
+            webrtc_streamer(key="webcam", mode=WebRtcMode.SENDRECV)
 
         elif source_option == "RTSP":
             rtsp_url = st.text_input("Insert a rtsp link")
