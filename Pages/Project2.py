@@ -45,13 +45,21 @@ class Project2:
                     st.video(video_url)
 
         elif source_option == "Local drive":
-            video_file = st.file_uploader("Upload a video", type = ["mp4", "avi", "mov"])
-            if video_file:
+            file = st.file_uploader("Upload a video or a photo", type = ["mp4", "avi", "mov", "png", "jpg"])
+            if file.type in ["mp4", "avi", "mov"] and file:
 
-                temp_file = tempfile.NamedTemporaryFile(delete=False, suffix=Path(video_file.name).suffix)
-                temp_file.write(video_file.read())
+                temp_file = tempfile.NamedTemporaryFile(delete=False, suffix=Path(file.name).suffix)
+                temp_file.write(file.read())
                 video_url = temp_file.name
                 st.video(video_url)
+
+            elif file.type in ["png", "jpg"] and file:
+                img_file = file
+                if img_file is not None:
+                    file_bytes = np.asarray(bytearray(img_file.read()), dtype=np.uint8)
+                    frame = cv2.imdecode(file_bytes, 1)
+                    st.image(frame, channels="BGR")
+
 
         elif source_option == "Web camera":
             st.write("A webcam is being launched. . .")
