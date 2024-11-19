@@ -66,7 +66,7 @@ class Project2:
             frame = cv2.imdecode(file_bytes, 1)
             st.image(frame, channels="BGR")
 
-        elif run_button and video_url is not None and source_option in ["Local drive", "RTSP"]:
+        elif run_button and video_url is not None and source_option in ["Local drive", "RTSP", "Web camera"]:
             self.cap = cv2.VideoCapture(video_url)
 
 
