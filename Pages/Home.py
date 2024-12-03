@@ -6,8 +6,6 @@ class Home:
         pass
     def app(self):
         st.write(st.__version__)
-        page_title = "Digital CV | John Doe"
-        page_icon = ":wave:"
         name = "John Doe"
         description = """
         Senior Data Analyst, assisting enterprises by supporting data-driven decision-making.
@@ -25,8 +23,6 @@ class Home:
             "🏆 Desktop Application - Excel2CSV converter with user settings & menubar": "https://youtu.be/LzCfNanQ_9c",
             "🏆 MyToolBelt - Custom MS Excel add-in to combine Python & Excel": "https://pythonandvba.com/mytoolbelt/",
         }
-
-        st.set_page_config(page_title=page_title, page_icon=page_icon)
 
         image = Image.open("img/magic.png")
 
