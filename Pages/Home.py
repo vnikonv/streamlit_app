@@ -8,7 +8,7 @@ class Home:
         st.write(st.__version__)
         name = "Elise Typhon, the Spectator"
         description = """
-        Junior Magician, assisting enterprises by supporting data-driven decision-making.
+        Junior Magician, temporary unemployed
         """
         email = "elise_typhon@email.com"
         social_media = {
@@ -40,10 +40,9 @@ class Home:
         st.subheader("Experience & Qualifications")
         st.write(
             """
-        - ✔️ 7 Years experience extracting actionable insights from data
-        - ✔️ Strong hands on experience and knowledge in Python and Excel
-        - ✔️ Good understanding of statistical principles and their respective applications
-        - ✔️ Excellent team-player and displaying strong sense of initiative on tasks
+        - ✔️ 100+ Years experience extracting actionable insights from data
+        - ✔️ An ever-growing knowledge of natural languages, C2 Russian, C1 English, B2 French, B1 Kazakh
+        - ✔️ Effective management skills, academic literacy and a strong sense of initiative on tasks
         """
         )
 
@@ -52,10 +51,10 @@ class Home:
         st.subheader("Hard Skills")
         st.write(
             """
-        - 👩‍💻 Programming: Python (Scikit-learn, Pandas), SQL, VBA
-        - 📊 Data Visualization: PowerBi, MS Excel, Plotly
-        - 📚 Modeling: Logistic regression, linear regression, decision trees
-        - 🗄️ Databases: Postgres, MongoDB, MySQL
+        - 👩‍💻 Programming: Python, Java
+        - 📊 Data Visualization: MS Excel, Streamlit
+        - 📚 Web-programming: HTML, CSS, Javascript
+        - 🗄️ Databases: MySQL
         """
         )
 
@@ -65,37 +64,13 @@ class Home:
         st.write("---")
 
         # --- JOB 1
-        st.write("🚧", "**Senior Data Analyst | Ross Industries**")
-        st.write("02/2020 - Present")
+        st.write("🚧", "**Unemployed**")
+        st.write("02/1920 - Present")
         st.write(
             """
-        - ► Used PowerBI and SQL to redeﬁne and track KPIs surrounding marketing initiatives, and supplied recommendations to boost landing page conversion rate by 38%
-        - ► Led a team of 4 analysts to brainstorm potential marketing and sales improvements, and implemented A/B tests to generate 15% more client leads
-        - ► Redesigned data model through iterations that improved predictions by 12%
-        """
-        )
-
-        # --- JOB 2
-        st.write('\n')
-        st.write("🚧", "**Data Analyst | Liberty Mutual Insurance**")
-        st.write("01/2018 - 02/2022")
-        st.write(
-            """
-        - ► Built data models and maps to generate meaningful insights from customer data, boosting successful sales eﬀorts by 12%
-        - ► Modeled targets likely to renew, and presented analysis to leadership, which led to a YoY revenue increase of $300K
-        - ► Compiled, studied, and inferred large amounts of data, modeling information to drive auto policy pricing
-        """
-        )
-
-        # --- JOB 3
-        st.write('\n')
-        st.write("🚧", "**Data Analyst | Chegg**")
-        st.write("04/2015 - 01/2018")
-        st.write(
-            """
-        - ► Devised KPIs using SQL across company website in collaboration with cross-functional teams to achieve a 120% jump in organic traﬃc
-        - ► Analyzed, documented, and reported user survey results to improve customer communication processes by 18%
-        - ► Collaborated with analyst team to oversee end-to-end process surrounding customers' return data
+        - ► For some reason, noone is eager to hire a young and prospective sorcerer that is yours truly :(
+        - ► I have been sitting in my mind-dungeon for over a century and am still locked insideth  
+        - ► Maybe programming will bring upon more benefits than sorcery did...
         """
         )
 
@@ -104,10 +79,10 @@ class Home:
         st.subheader("Projects & Accomplishments")
         st.write("---")
         st.write("""
-        - 🏆 Sales Dashboard - Comparing sales across three stores
-        - 🏆 Income and Expense Tracker - Web app with NoSQL database
-        - 🏆 Desktop Application - Excel2CSV converter with user settings & menubar
-        - 🏆 MyToolBelt - Custom MS Excel add-in to combine Python & Excel
+        - 🏆 IELTS 7.5 - Passed the paper-based version of IELTS by British Council
+        - 🏆 Data Analysis Using Python on Coursera - Working with Numpy and Pandas
+        - 🏆 AI Capstone Project with Deep Learning on Coursera- Working with PyTorch and configuring pre-trained models
+        - 🏆 Project Management Project on Coursera - A Thermal Power Plant Modernization Project
         """)
 
         st.markdown("""<style>
