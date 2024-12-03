@@ -30,9 +30,9 @@ class Project3:
         if df[category_column].dtype == 'object' or df[category_column].dtype.name== 'category':
             if df[value_column].dtype in ['int64', 'float64']:
 
-                category_mean =df.groupby(category_column)[value_column].mean()
+                category_mean = df.groupby(category_column)[value_column].mean()
 
-                colors= plt.cm.get_cmap('tab20', len(category_mean))
+                colors = plt.cm.get_cmap('tab20', len(category_mean))
 
                 fig, ax = plt.subplots()
                 category_mean.plot ( kind='bar', ax=ax, color=colors(np.arange(len(category_mean))))
@@ -51,13 +51,13 @@ class Project3:
 
     def app(self):
         st.title("Creation of DataFrame")
-        upload= st.file_uploader("Choose a CSV file")
+        upload = st.file_uploader("Choose a CSV file")
         if upload is not None:
-            df= self.load_data(upload)
+            df = self.load_data(upload)
             st.dataframe(df, height=400, width=600)
 
-            category_column= st.selectbox('Select category column', df.columns)
-            value_column= st.selectbox('Select value column', df.columns)
+            category_column = st.selectbox('Select category column', df.columns)
+            value_column = st.selectbox('Select value column', df.columns)
 
             if category_column and value_column:
                 st.subheader(f'Bar Chart and Mean of {value_column} by {category_column}')
@@ -67,7 +67,7 @@ class Project3:
 
         st.markdown("""<style>
                     h1 {
-                    color: yellow;
+                    color: green;
                     font-size: 20px;
                     text-align: center;
                     }
