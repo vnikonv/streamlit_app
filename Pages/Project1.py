@@ -15,7 +15,7 @@ class Project1:
                 return data
             return None
 
-        upload = st.file_uploader("choose csv file")
+        upload = st.file_uploader("Choose a CSV file")
         if upload is not None:
             df = load_data(upload)
             st.dataframe(df, height=400, width=600)

@@ -103,10 +103,10 @@ class Home:
         st.write('\n')
         st.subheader("Projects & Accomplishments")
         st.write("---")
-        st.write("""🏆 Sales Dashboard - Comparing sales across three stores,
-            🏆 Income and Expense Tracker - Web app with NoSQL database,
-            🏆 Desktop Application - Excel2CSV converter with user settings & menubar,
-            🏆 MyToolBelt - Custom MS Excel add-in to combine Python & Excel""",)
+        st.write("""-🏆 Sales Dashboard - Comparing sales across three stores
+                    -🏆 Income and Expense Tracker - Web app with NoSQL database
+                    -🏆 Desktop Application - Excel2CSV converter with user settings & menubar
+                    -🏆 MyToolBelt - Custom MS Excel add-in to combine Python & Excel""",)
 
         st.markdown("""<style>
         a {
