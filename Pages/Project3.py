@@ -68,8 +68,6 @@ class Project3:
         st.markdown("""<style>
                     h1 {
                     color: green;
-                    font-size: 20px;
-                    text-align: center;
                     }
                     </style>""", unsafe_allow_html=True)
 

@@ -6,22 +6,16 @@ class Home:
         pass
     def app(self):
         st.write(st.__version__)
-        name = "John Doe"
+        name = "Elise Typhon, the Spectator"
         description = """
-        Senior Data Analyst, assisting enterprises by supporting data-driven decision-making.
+        Junior Magician, assisting enterprises by supporting data-driven decision-making.
         """
-        email = "johndoe@email.com"
+        email = "elise_typhon@email.com"
         social_media = {
-            "YouTube": "https://youtube.com/c/codingisfun",
+            "YouTube": "https://youtube.com",
             "LinkedIn": "https://linkedin.com",
             "GitHub": "https://github.com",
             "Twitter": "https://twitter.com",
-        }
-        projects = {
-            "🏆 Sales Dashboard - Comparing sales across three stores": "https://youtu.be/Sb0A9i6d320",
-            "🏆 Income and Expense Tracker - Web app with NoSQL database": "https://youtu.be/3egaMfE9388",
-            "🏆 Desktop Application - Excel2CSV converter with user settings & menubar": "https://youtu.be/LzCfNanQ_9c",
-            "🏆 MyToolBelt - Custom MS Excel add-in to combine Python & Excel": "https://pythonandvba.com/mytoolbelt/",
         }
 
         image = Image.open("img/magic.png")
@@ -109,5 +103,22 @@ class Home:
         st.write('\n')
         st.subheader("Projects & Accomplishments")
         st.write("---")
-        for project, link in projects.items():
-            st.write(f"[{project}]({link})")
+        st.write("""🏆 Sales Dashboard - Comparing sales across three stores,
+            🏆 Income and Expense Tracker - Web app with NoSQL database,
+            🏆 Desktop Application - Excel2CSV converter with user settings & menubar,
+            🏆 MyToolBelt - Custom MS Excel add-in to combine Python & Excel""",)
+
+        st.markdown("""<style>
+        a {
+        text - decoration: none;
+        color: white !important;
+        font - weight: 500;
+        }
+        a: hover {
+        color:  # d33682 !important;
+        text - decoration: none;
+        }
+        ul {
+        list - style - type: none;
+        }
+        </style>""", unsafe_allow_html=True)
