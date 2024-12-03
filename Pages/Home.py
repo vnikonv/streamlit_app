@@ -110,15 +110,15 @@ class Home:
 
         st.markdown("""<style>
         a {
-        text - decoration: none;
+        text-decoration: none;
         color: white !important;
-        font - weight: 500;
+        font-weight: 500;
         }
         a: hover {
         color:  # d33682 !important;
-        text - decoration: none;
+        text-decoration: none;
         }
         ul {
-        list - style - type: none;
+        list-style-type: none;
         }
         </style>""", unsafe_allow_html=True)
