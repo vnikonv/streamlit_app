@@ -36,7 +36,7 @@ class Project2:
                         ydl_opts = {"format": "best[ext=mp4]/best", "noplaylist": True}
                         with YoutubeDL(ydl_opts) as ydl:
                             info_dict = ydl.extract_info(youtube_url, download=False)
-                            video_url = info_dict.get("url", None)
+
                     except Exception as e:
                         st.error(f"An error occurred: {e}")
 
