@@ -19,7 +19,6 @@ class Project2:
         )
 
         video_url = None
-        img_file = None
 
         if source_option == "Mobile camera":
             img_file = st.camera_input("Take a photo")

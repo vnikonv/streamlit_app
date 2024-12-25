@@ -8,7 +8,7 @@ class Home:
         st.write(st.__version__)
         name = "Elise Typhon, the Spectator"
         description = """
-        Junior Magician, temporary unemployed
+        Junior Magician, temporarily unemployed
         """
         email = "elise_typhon@email.com"
         social_media = {
@@ -41,7 +41,7 @@ class Home:
         st.write(
             """
         - ✔️ 100+ Years experience extracting actionable insights from data
-        - ✔️ An ever-growing knowledge of natural languages, C2 Russian, C1 English, B2 French, B1 Kazakh
+        - ✔️ An ever-growing knowledge of natural languages, C2 Russian, C1 English, B2 French, B2 Kazakh, B1 Latin, A1 Sumerian
         - ✔️ Effective management skills, academic literacy and a strong sense of initiative on tasks
         """
         )
@@ -81,7 +81,7 @@ class Home:
         st.write("""
         - 🏆 IELTS 7.5 - Passed the paper-based version of IELTS by British Council
         - 🏆 Data Analysis Using Python on Coursera - Working with Numpy and Pandas
-        - 🏆 AI Capstone Project with Deep Learning on Coursera- Working with PyTorch and configuring pre-trained models
+        - 🏆 AI Capstone Project with Deep Learning on Coursera - Working with PyTorch and configuring pre-trained models
         - 🏆 Project Management Project on Coursera - A Thermal Power Plant Modernization Project
         """)
 
