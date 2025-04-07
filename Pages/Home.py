@@ -123,4 +123,8 @@ class Home:
 		img {
 		border-radius: 15px;
 		}
+		body {
+		background-image: url("img/fish.gif");
+    	background-size: cover;
+    	}
 		</style>""", unsafe_allow_html=True)

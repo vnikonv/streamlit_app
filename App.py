@@ -24,7 +24,6 @@ styles = {
 
     "div": {
         "max-width": "32rem",
-		"background-image": "url('img/fish.gif')"
     },
 
     "span": {
