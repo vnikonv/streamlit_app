@@ -4,7 +4,7 @@ from streamlit_navigation_bar import st_navbar as navbar
 from PIL import Image
 
 image = Image.open("img/magic.png")
-st.set_page_config(page_title="The Work", initial_sidebar_state="collapsed", page_icon=image)
+st.set_page_config(page_title="The Work", initial_sidebar_state="collapsed", layout="wide", page_icon=image)
 
 pages = ["Home", "Project1", "Project2", "Project3"]
 
@@ -31,7 +31,7 @@ styles = {
         "border-radius": "0.15rem",
         "padding": "0.2rem 0.725rem",
         "color": "white",
-        "font-size": "18px",
+        "font-size": "24px",
     },
 
     "active": {
