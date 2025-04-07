@@ -122,9 +122,6 @@ class Home:
 		}
 		img {
 		border-radius: 15px;
+		margin: auto;
 		}
-		body {
-		background-image: url("img/fish.gif");
-    	background-size: cover;
-    	}
 		</style>""", unsafe_allow_html=True)

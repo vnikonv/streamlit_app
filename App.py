@@ -24,6 +24,7 @@ styles = {
 
     "div": {
         "max-width": "32rem",
+		"font-size": "18px",
     },
 
     "span": {
@@ -31,7 +32,7 @@ styles = {
         "border-radius": "0.15rem",
         "padding": "0.2rem 0.725rem",
         "color": "white",
-        "font-size": "24px",
+        "font-size": "18px",
     },
 
     "active": {
