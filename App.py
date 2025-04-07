@@ -24,7 +24,6 @@ styles = {
 
     "div": {
         "max-width": "32rem",
-		"font-size": "18px",
     },
 
     "span": {

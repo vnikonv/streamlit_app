@@ -20,11 +20,14 @@ class Home:
 
 		image = Image.open("img/me_docs.png")
 
-		col1, col2 = st.columns(2, gap="small")
+		col1, col2, col3 = st.columns(3, gap="small")
 		with col1:
 			st.image(image, width=230)
-
+			
 		with col2:
+			st.image("img/me_2020.jpg", width=230)
+
+		with col3:
 			st.title(name)
 			st.write(age)
 			st.write(description)
@@ -100,12 +103,6 @@ class Home:
 		Изначально, здесь хостились только мои проекты по визуализации данных и работе с медиа-потоками на Стримлите.
 		Сейчас домашняя страница была преобразована в визитку, а проекты всё ещё доступны в других вкладках.
 		""")
-		
-		col3, col4 = st.columns([3,3], gap="small")
-		with col3:
-			st.image("img/fish.gif")
-		with col4:
-			st.image("img/moon.gif")
 
 		st.markdown("""<style>
 		a {
