@@ -120,6 +120,6 @@ class Home:
 		img {
 		border-radius: 15px;
 		margin: auto;
-		height: 100%;
+		height: 50vh;
 		}
 		</style>""", unsafe_allow_html=True)
