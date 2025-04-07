@@ -6,16 +6,15 @@ class Home:
         pass
     def app(self):
         st.write(st.__version__)
-        name = "Elise Typhon, the Spectator"
+        name = "Никон Веремейчик, 19 лет"
         description = """
-        Junior Magician, temporarily unemployed
+        Студент второго курса по специальности "Информационные Системы в Управлении" в Северо-Казахстанском Университете имени Манаша Козыбаева
         """
-        email = "elise_typhon@email.com"
+        email = "thesecondnikon@gmail.com"
         social_media = {
-            "YouTube": "https://youtube.com",
-            "LinkedIn": "https://linkedin.com",
-            "GitHub": "https://github.com",
-            "Twitter": "https://twitter.com",
+            "Coursera": "https://www.coursera.org/learner/nikon-veremeichik",
+            "GitHub": "https://github.com/vnikonv",
+			"Telegram": "t.me/second_nikon"
         }
 
         image = Image.open("img/magic.png")
@@ -37,52 +36,54 @@ class Home:
 
         # --- EXPERIENCE & QUALIFICATIONS ---
         st.write('\n')
-        st.subheader("Experience & Qualifications")
+        st.subheader("Личные Качества и Квалификации")
         st.write(
             """
-        - ✔️ 100+ Years experience extracting actionable insights from data
-        - ✔️ An ever-growing knowledge of natural languages, C2 Russian, C1 English, B2 French, B2 Kazakh, B1 Latin, A1 Sumerian
-        - ✔️ Effective management skills, academic literacy and a strong sense of initiative on tasks
-        """
+        - ✔️ Активно участвую в командных проектах. Вежлив, доброжелателен. Серьёзно отношусь к выполнению поставленных задач.
+        - ✔️ Прекрасно знаю Русский (С2) и Английский (С1); знаю Французский и Казахский на среднем уровне (B2).
+        - ✔️ Обладаю грамотной письменной и устной речью. Увлекаюсь искусством, культурой и музыкой. В свободное время совершенствую профессиональные навыки, программирую и изучаю языки. 
+		- ✔️ В особенности люблю системно организовывать информацию и поддерживать порядок в рабочих процессах.
+		 """
         )
 
         # --- SKILLS ---
         st.write('\n')
-        st.subheader("Hard Skills")
+        st.subheader("Профессиональные Навыки")
         st.write(
             """
-        - 👩‍💻 Programming: Python, Java
-        - 📊 Data Visualization: MS Excel, Streamlit
-        - 📚 Web-programming: HTML, CSS, Javascript
-        - 🗄️ Databases: MySQL
+        - 👩‍💻 Программирование: Python, Java, C++
+        - 📊 Визуализация Данных: MS Excel, Streamlit
+        - 📚 Веб-Программирование: HTML, Tailwinds CSS, JavaScript/TypeScript, Nuxt
+        - 🗄️  Работа с Базами Данных: PostgreSQL
+		- 🐧💻 Работа с Линуксом: ArchLinux
+		- 🤖 Машинное Обучение: Transformers, PyTorch
         """
         )
 
         # --- WORK HISTORY ---
         st.write('\n')
-        st.subheader("Work History")
+        st.subheader("Опыт работы")
         st.write("---")
 
         # --- JOB 1
-        st.write("🚧", "**Unemployed**")
-        st.write("02/1920 - Present")
+        st.write("🚧", "**Безработный**")
+        st.write("02/2005 - Present")
         st.write(
             """
-        - ► For some reason, noone is eager to hire a young and prospective sorcerer that is yours truly :(
-        - ► I have been sitting in my mind-dungeon for over a century and am still locked insideth  
-        - ► Maybe programming will bring upon more benefits than sorcery did...
+        - ► Заинтересован в прохождении рабочей практики на Вашем предприятии.
         """
         )
 
         # --- Projects & Accomplishments ---
         st.write('\n')
-        st.subheader("Projects & Accomplishments")
+        st.subheader("Проекты и Достижения")
         st.write("---")
         st.write("""
-        - 🏆 IELTS 7.5 - Passed the paper-based version of IELTS by British Council
-        - 🏆 Data Analysis Using Python on Coursera - Working with Numpy and Pandas
-        - 🏆 AI Capstone Project with Deep Learning on Coursera - Working with PyTorch and configuring pre-trained models
-        - 🏆 Project Management Project on Coursera - A Thermal Power Plant Modernization Project
+        - 🏆 IELTS 7.5 - Прошёл бумажную версию теста IELTS by British Council
+        - 🏆 Data Analysis Using Python on Coursera - Работа с Numpy и Pandas
+        - 🏆 AI Capstone Project with Deep Learning on Coursera - Работа с PyTorch и конфигурация pre-trained моделей
+        - 🏆 Project Management Project on Coursera - Проект по Модернизации Термальной Электростанции
+		- 🏆 Личный проект по обучению LoRA модели через Transformers на основе Pythia-6.9b
         """)
 
         st.markdown("""<style>

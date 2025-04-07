@@ -7,7 +7,7 @@ class Project1:
     def __init__(self):
         pass
     def app(self):
-        st.title("Creation of DataFrames")
+        st.title("Создание ДатаФреймов")
 
         def load_data(file):
             if file is not None:
@@ -15,19 +15,19 @@ class Project1:
                 return data
             return None
 
-        upload = st.file_uploader("Choose a CSV file")
+        upload = st.file_uploader("Выберите CSV файл")
         if upload is not None:
             df = load_data(upload)
             st.dataframe(df, height=400, width=600)
-            column = st.selectbox("Choose column for filter", df.columns)
+            column = st.selectbox("Выберите колонку для фильтра", df.columns)
             if column:
                 unique_values = df[column].unique()
-                selected_values = st.multiselect(f"Select values for {column}", options=unique_values,
+                selected_values = st.multiselect(f"Выберите значения для {column}", options=unique_values,
                                                 default=unique_values)
                 filtered_df = df[df[column].isin(selected_values)]
                 st.dataframe(filtered_df, height=400, width=600)
         else:
-            st.warning("Please upload a csv file")
+            st.warning("Пожалуйста, загрузите CSV файл")
 
         st.markdown("""<style>
         h1 {
