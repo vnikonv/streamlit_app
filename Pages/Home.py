@@ -124,7 +124,7 @@ class Home:
 		margin: auto;
 		height: 45vh;
 		}
-		@media min-width:300px and max-width:700px {
+		@media max-width:1000px {
 			img {
 			border-radius: 15px;
 			margin: auto;
