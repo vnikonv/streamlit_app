@@ -22,7 +22,9 @@ styles = {
         "height": "30px",
     },
 
-    
+    "div": {
+        "max-width": "32rem",
+    },
 
     "span": {
         "display": "block",
@@ -39,7 +41,11 @@ styles = {
 
     "hover": {
         "background-color": "rgba(0, 0, 0, 0.35)",
-    }
+    },
+	
+	"body": {
+		"background-image": "url('img/fish.gif')"
+	}
 }
 
 page = navbar(pages, logo_path="img/magic.svg", styles=styles)
