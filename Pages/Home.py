@@ -22,7 +22,9 @@ class Home:
 
 		col1, col2, col3 = st.columns(3, gap="small")
 		with col1:
-			st.image(image, width=230)
+			left_co, cent_co, last_co = st.columns(3)
+			with cent_co:
+				st.image(image, width=230)
 			
 		with col2:
 			st.image("img/me_2020.jpg", width=230)
