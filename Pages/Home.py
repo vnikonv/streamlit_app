@@ -128,7 +128,7 @@ class Home:
 			img {
 			border-radius: 15px;
 			margin: auto;
-			height: auto;
+			aspect-ratio: 3/4;
 			}
 		}
 		</style>""", unsafe_allow_html=True)
