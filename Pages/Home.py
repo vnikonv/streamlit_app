@@ -20,14 +20,18 @@ class Home:
 
 		image = Image.open("img/me_docs.png")
 
-		col1, col2 = st.columns(2, gap="small")
+		col1, col2, col3 = st.columns(3, gap="small")
 		with col1:
-			left_co, cent_co, last_co = st.columns(3)
+			left_co, cent_co, last_co = st.columns(3, gap="small")
 			with cent_co:
 				st.image(image, width=230)
+			
+		with col2:
+			left_co, cent_co, last_co = st.columns(3, gap="small")
+			with cent_co:
 				st.image("img/me_2020.jpg", width=230)
 
-		with col2:
+		with col3:
 			st.title(name)
 			st.write(age)
 			st.write(description)
