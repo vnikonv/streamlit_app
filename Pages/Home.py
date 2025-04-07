@@ -24,12 +24,12 @@ class Home:
 		with col1:
 			left_co, cent_co, last_co = st.columns(3, gap="small")
 			with cent_co:
-				st.image(image, width=300)
+				st.image(image, use_column_width=True)
 			
 		with col2:
 			left_co, cent_co, last_co = st.columns(3, gap="small")
 			with cent_co:
-				st.image("img/me_2020.jpg", width=300)
+				st.image("img/me_2020.jpg", use_column_width=True)
 
 		with col3:
 			st.title(name)
