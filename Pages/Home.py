@@ -27,7 +27,9 @@ class Home:
 				st.image(image, width=230)
 			
 		with col2:
-			st.image("img/me_2020.jpg", width=230)
+			left_co, cent_co, last_co = st.columns(3)
+			with cent_co:
+				st.image("img/me_2020.jpg", width=230)
 
 		with col3:
 			st.title(name)
