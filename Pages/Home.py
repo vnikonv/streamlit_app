@@ -114,4 +114,7 @@ class Home:
 		ul {
 		list-style-type: none;
 		}
+		img {
+		border-radius: 15px;
+		}
 		</style>""", unsafe_allow_html=True)
