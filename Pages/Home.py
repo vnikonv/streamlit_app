@@ -104,8 +104,8 @@ class Home:
 		st.markdown("""<style>
 		a {
 		text-decoration: none;
-		color: white !important;
-		font-weight: 500;
+		color: rgb(123, 209, 146) !important;
+		font-weight: 1000;
 		}
 		a: hover {
 		color:  # d33682 !important;
