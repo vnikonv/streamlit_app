@@ -122,13 +122,6 @@ class Home:
 		img {
 		border-radius: 15px;
 		margin: auto;
-		height: 45vh;
-		}
-		@media max-width:1000px {
-			img {
-			border-radius: 15px;
-			margin: auto;
-			aspect-ratio: 3/4;
-			}
+		aspect-ratio: 3/4;
 		}
 		</style>""", unsafe_allow_html=True)
