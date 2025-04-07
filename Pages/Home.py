@@ -20,7 +20,7 @@ class Home:
 
 		image = Image.open("img/me_docs.png")
 
-		col1, col2, col3 = st.columns([0.3, 0.2, 0.5], gap="small", vertical_alignment="center")
+		col1, col2, col3 = st.columns([0.3, 0.2, 0.5], gap="small")
 		with col1:
 			st.image(image, use_column_width=True)
 			
