@@ -36,34 +36,34 @@ class Project3:
 
                 fig, ax = plt.subplots()
                 category_mean.plot ( kind='bar', ax=ax, color=colors(np.arange(len(category_mean))))
-                ax.set_title(f'Mean {value_column} by {category_column}')
+                ax.set_title(f'Среднее значение {value_column} по {category_column}')
                 ax.set_xlabel(category_column)
-                ax.set_ylabel(f'Mean {value_column} ')
+                ax.set_ylabel(f'Среднее значение {value_column}')
                 st.pyplot(fig)
 
-                st.write(f"Mean {value_column} by {category_column}:")
+                st.write(f"Среднее значение {value_column} по {category_column}:")
                 st.dataframe(category_mean)
             else:
-                st.warning(f"{value_column} is not a numeric column. Please select a numeric column to get values")
+                st.warning(f"{value_column} не числового типа. Выберите столбец числового типа")
         else:
-            st.warning(f"{category_column} is not a categorical column. Please select a categorical column to comply")
+            st.warning(f"{category_column} не столбец категории. Выберите столбец категории")
 
 
     def app(self):
-        st.title("Creation of DataFrame")
-        upload = st.file_uploader("Choose a CSV file")
+        st.title("Создание ДатаФрейма")
+        upload = st.file_uploader("Выберите CSV файл")
         if upload is not None:
             df = self.load_data(upload)
             st.dataframe(df, height=400, width=600)
 
-            category_column = st.selectbox('Select category column', df.columns)
-            value_column = st.selectbox('Select value column', df.columns)
+            category_column = st.selectbox('Выберите столбец категории', df.columns)
+            value_column = st.selectbox('Выберите столбец со значениями', df.columns)
 
             if category_column and value_column:
-                st.subheader(f'Bar Chart and Mean of {value_column} by {category_column}')
+                st.subheader(f'Бар Чарт и Среднее Значение {value_column} по {category_column}')
                 self.plot_bar_chart(df, category_column, value_column)
         else:
-            st.warning("Please upload a CSV file")
+            st.warning("Пожалуйста, загрузите CSV файл")
 
         st.markdown("""<style>
                     h1 {

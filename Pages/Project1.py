@@ -19,7 +19,7 @@ class Project1:
         if upload is not None:
             df = load_data(upload)
             st.dataframe(df, height=400, width=600)
-            column = st.selectbox("Выберите колонку для фильтра", df.columns)
+            column = st.selectbox("Выберите столбец для фильтра", df.columns)
             if column:
                 unique_values = df[column].unique()
                 selected_values = st.multiselect(f"Выберите значения для {column}", options=unique_values,
