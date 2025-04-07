@@ -22,9 +22,7 @@ styles = {
         "height": "30px",
     },
 
-    "div": {
-        "max-width": "32rem",
-    },
+    
 
     "span": {
         "display": "block",
