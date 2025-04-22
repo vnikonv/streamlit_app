@@ -15,7 +15,8 @@ class Home:
 		social_media = {
 			"Coursera": "https://www.coursera.org/learner/nikon-veremeichik",
 			"GitHub": "https://github.com/vnikonv",
-			"Telegram": "https://t.me/second_nikon"
+			"Telegram": "https://t.me/second_nikon",
+			"LinkedIn": "https://linkedin.com/in/nikon-veremeichik-44055b361"
 		}
 
 		image = Image.open("img/me_docs.png")
